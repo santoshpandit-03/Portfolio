@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">MyPortfolio</a>
+      <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="">Home</a>
+        <a href="about.html" class="">About</a>
+        <a href="projects.html" class="">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="Santosh resume.pdf" target="_blank" class="btn">Download Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="stack gap-l">
+      <h1>Contact</h1>
+      <form id="contactForm" class="form card">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <small class="error" id="nameError"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <small class="error" id="emailError"></small>
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required />
+          <small class="error" id="subjectError"></small>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <small class="error" id="messageError"></small>
+        </div>
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Santosh Pandit. All rights reserved.
+        </p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/santosh-pandit-0210sp/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/santoshpandit-03" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>

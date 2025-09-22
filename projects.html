@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">MyPortfolio</a>
+        <button
+          class="menu-toggle"
+          aria-label="Open Menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="nav" id="nav">
+          <a href="index.html" class="">Home</a>
+          <a href="about.html" class="">About</a>
+          <a href="projects.html" class="active">Projects</a>
+          <a href="contact.html" class="">Contact</a>
+          <a href="Santosh resume.pdf" target="_blank" class="btn"
+            >Download Resume</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="stack gap-l">
+        <h1>Projects</h1>
+        <div class="gallery">
+          <figure
+            class="project"
+            data-title="Weather App"
+            data-desc="Weather App – “Live weather details using API integration, shows temperature, humidity, and conditions with a clean UI.”"
+          >
+            <img src="assets/images/weather.jpg" alt="weather app thumbnail" />
+            <figcaption>Weather App</figcaption>
+          </figure>
+          <figure
+            class="project"
+            data-title="Tic-Tac-Toe App"
+            data-desc="Tic Tac Toe App – “A simple 2-player Tic Tac Toe game built with HTML, CSS, and JavaScript for fun and practice.”"
+          >
+            <img
+              src="assets/images/tictactoe.jpg"
+              alt="tic tac toe thumbnail"
+            />
+            <figcaption>Tic-Tac-Toe</figcaption>
+          </figure>
+          <figure
+            class="project"
+            data-title="Portfolio Website"
+            data-desc="Portfolio Website – “A personal portfolio site to showcase my skills, resume, and projects in a responsive layout.”"
+          >
+            <img src="assets/images/portfolio.jpg" alt="portfolio thumbnail" />
+            <figcaption>Portfolio</figcaption>
+          </figure>
+          <figure
+            class="project"
+            data-title="To-Do List App"
+            data-desc="To-Do List App – “Organize daily tasks with add, edit, and delete options; stores data in local storage for persistence.”"
+          >
+            <img src="assets/images/todo list.jpg" alt="todo list thumbnail" />
+            <figcaption>To-Do List</figcaption>
+          </figure>
+          <figure
+            class="project"
+            data-title="Gas Agency System"
+            data-desc="Gas Agency System - “Allows customers to book/refill gas cylinders and lets admin track and manage delivery status efficiently.”"
+          >
+            <img src="assets/images/gas.jpg" alt="gas thumbnail" />
+            <figcaption>Gas Agency System</figcaption>
+          </figure>
+          <figure
+            class="project"
+            data-title="Hospital Scheduler"
+            data-desc="Hospital Scheduler – “Streamlines patient requests, doctor approvals, and operation scheduling with real-time updates.”"
+          >
+            <img src="assets/images/hospital.jpg" alt="hospital thumbnail" />
+            <figcaption>Hospital Scheduler</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal"
+      id="projectModal"
+      aria-hidden="true"
+      role="dialog"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal-content">
+        <button class="close" aria-label="Close">×</button>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Santosh Pandit. All rights reserved.
+        </p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/santosh-pandit-0210sp/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/santoshpandit-03" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">MyPortfolio</a>
+      <button class="menu-toggle" aria-label="Open Menu" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html" class="">About</a>
+        <a href="projects.html" class="">Projects</a>
+        <a href="contact.html" class="">Contact</a>
+        <a href="Santosh resume.pdf" target="_blank" class="btn">Download Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="accent">Santosh Pandit</span></h1>
+        <p class="lead">A passionate <strong>Web Developer</strong> crafting clean, user‑friendly experiences.</p>
+        <div class="cta">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn btn-secondary" href="contact.html">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/images/IMG-20250821-WA0011[1].jpg" alt="Profile" />
+      </div>
+    </section>
+
+    <section class="container features">
+      <article class="card">
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript, React, Tailwind, Bootstrap</p>
+      </article>
+      <article class="card">
+        <h3>Backend</h3>
+        <p>Node.js, Express, REST APIs, Java, C++</p>
+      </article>
+      <article class="card">
+        <h3>Tools</h3>
+        <p>Git, GitHub, VS Code</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Santosh Pandit. All rights reserved.
+        </p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/santosh-pandit-0210sp/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/santoshpandit-03" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
